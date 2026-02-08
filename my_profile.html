@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akachukwu Ukenna | AU Tech Solutions</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:'Segoe UI',sans-serif;
+background:#0a0a0a;
+color:#f2f2f2;
+line-height:1.7;
+}
+
+/* GENERAL */
+.container{
+max-width:1150px;
+margin:auto;
+padding:90px 20px;
+}
+.section-title{
+font-size:38px;
+font-weight:800;
+margin-bottom:45px;
+}
+.btn{
+display:inline-block;
+padding:14px 40px;
+border-radius:40px;
+background:#4f9cff;
+color:#fff;
+text-decoration:none;
+font-weight:700;
+}
+
+/* ANIMATION */
+.fade{
+opacity:0;
+transform:translateY(30px);
+animation:fadeIn 1s forwards;
+}
+@keyframes fadeIn{
+to{opacity:1;transform:none}
+}
+
+/* HERO */
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+}
+.hero-wrap{
+display:flex;
+gap:50px;
+align-items:center;
+flex-wrap:wrap;
+}
+.logo{
+font-size:20px;
+font-weight:800;
+letter-spacing:1px;
+color:#4f9cff;
+margin-bottom:10px;
+}
+.profile-pic{
+width:170px;
+height:170px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #4f9cff;
+}
+.hero h1{
+font-size:54px;
+font-weight:900;
+}
+.hero h2{
+font-size:26px;
+margin-top:10px;
+color:#4f9cff;
+}
+.edu{
+margin-top:14px;
+font-size:16px;
+font-weight:700;
+color:#9fd0ff;
+}
+.hero p{
+margin-top:22px;
+max-width:750px;
+font-size:19px;
+color:#d0d0d0;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:28px;
+}
+.card{
+background:#141414;
+padding:32px;
+border-radius:22px;
+transition:.35s;
+}
+.card:hover{
+transform:translateY(-10px);
+background:#1d1d1d;
+}
+
+/* BADGES */
+.badge{
+display:inline-block;
+margin:6px 6px 0 0;
+padding:6px 14px;
+border-radius:20px;
+background:#202020;
+font-size:14px;
+}
+
+/* PRICING */
+.price{
+font-size:36px;
+font-weight:900;
+margin:15px 0;
+color:#4f9cff;
+}
+
+/* CONTACT */
+.contact-box{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+padding:65px;
+border-radius:35px;
+text-align:center;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:40px;
+color:#888;
+font-size:14px;
+}
+
+@media(max-width:768px){
+.hero h1{font-size:40px}
+.hero-wrap{text-align:center}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="container hero fade">
+<div class="hero-wrap">
+
+<img src="m.jpeg" class="m.jpeg" alt="m.jpeg">
+
+<div>
+<div class="logo">AU TECH SOLUTIONS</div>
+<h1>Akachukwu Ukenna</h1>
+<h2>Full-Stack Developer & Creative Technologist</h2>
+
+<div class="edu">
+Final Year Computer Science Student — ESTAM University
+</div>
+
+<p>
+I am a performance-driven computer professional specializing in frontend development,
+backend systems, and graphic design. I build modern digital products that are fast,
+secure, scalable, and visually powerful — technology built to perform.
+</p>
+
+<a href="#contact" class="btn">Work With Me</a>
+</div>
+
+</div>
+</div>
+
+<!-- SERVICES -->
+<div class="container fade">
+<h2 class="section-title">Services</h2>
+<div class="grid">
+<div class="card"><h3>Frontend Development</h3><p>High-performance, responsive interfaces with modern UI.</p></div>
+<div class="card"><h3>Backend Development</h3><p>APIs, databases, authentication & automation.</p></div>
+<div class="card"><h3>Graphic & UI Design</h3><p>Logos, branding, UI/UX & digital creatives.</p></div>
+<div class="card"><h3>Tech Solutions</h3><p>Setup, troubleshooting & system optimization.</p></div>
+</div>
+</div>
+
+<!-- PROJECTS -->
+<div class="container fade">
+<h2 class="section-title">Projects</h2>
+<div class="grid">
+<div class="card"><h3>Business Website</h3><p>Professional website built for client conversion.</p></div>
+<div class="card"><h3>Management System</h3><p>Backend system for secure data handling.</p></div>
+<div class="card"><h3>Brand Identity Design</h3><p>Logos and digital branding solutions.</p></div>
+</div>
+</div>
+
+<!-- SKILLS -->
+<div class="container fade">
+<h2 class="section-title">Skills & Tools</h2>
+<div class="grid">
+<div class="card"><h3>Frontend</h3><span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JS</span><span class="badge">React</span></div>
+<div class="card"><h3>Backend</h3><span class="badge">Python</span><span class="badge">Node</span><span class="badge">PHP</span><span class="badge">MySQL</span></div>
+<div class="card"><h3>Design</h3><span class="badge">Photoshop</span><span class="badge">Figma</span><span class="badge">UI/UX</span></div>
+<div class="card"><h3>Tools</h3><span class="badge">Git</span><span class="badge">Linux</span><span class="badge">Hosting</span></div>
+</div>
+</div>
+
+<!-- PRICING -->
+<div class="container fade">
+<h2 class="section-title">Pricing</h2>
+<div class="grid">
+<div class="card">
+<h3>Starter</h3>
+<div class="price">$150</div>
+<p>Landing page / simple website</p>
+</div>
+<div class="card">
+<h3>Professional</h3>
+<div class="price">$400</div>
+<p>Business website + backend</p>
+</div>
+<div class="card">
+<h3>Premium</h3>
+<div class="price">$800+</div>
+<p>Full system + branding</p>
+</div>
+</div>
+</div>
+
+<!-- CONTACT -->
+<div class="container fade" id="contact">
+<div class="contact-box">
+<h2 class="section-title">Contact</h2>
+<p>Available for freelance & long-term projects</p>
+<p><strong>Email:</strong> akachukwuukenna15@gmail.com</p>
+<p><strong>WhatsApp:</strong> +229 97 30 29 01</p>
+<p><strong>Location:</strong> Cotonou, Benin (Remote)</p>
+<br>
+<a href="https://wa.me/22997302901" class="btn">Chat on WhatsApp</a>
+</div>
+</div>
+
+<footer>
+© 2026 AU Tech Solutions — Akachukwu Ukenna
+</footer>
+
+</body>
+</html>
